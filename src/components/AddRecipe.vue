@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    <h2>Add recipe</h2>
   </div>
 </template>
 
@@ -11,10 +11,8 @@ export default {
 
   }
 }
-
 </script>
 
 <style>
-
 
 </style>
