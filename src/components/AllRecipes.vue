@@ -12,11 +12,17 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import {allRecipesInfo, Recipe} from './data'
+import { ref } from "vue";
 
 export default {
   setup(){
+  const allRecipesText = ref<Recipe>(allRecipesInfo)
 
+    return{
+      allRecipesText
+    }
   }
 }
 </script>
