@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app">
     <div class="header">
       <HeaderComponent/>
     </div>
@@ -25,7 +25,7 @@ export default {
 
 <style>
 body{
-  background-color: rgba(0, 0, 0, 0.89);
+  background-color: wheat;
   color: white;
 }
 
@@ -33,5 +33,4 @@ body{
   background-color: white;
   border-radius: 10px;
 }
-
 </style>

@@ -3,10 +3,10 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/recipes/all">All Recipes</router-link>
+          <router-link to="/recipes/all" class="routerLinkAllRecipes">All Recipes</router-link>
         </li>
         <li>
-          <router-link to="/recipes/add">Add Recipe</router-link>
+          <router-link to="/recipes/add" class="routerLinkAddRecipe">Add Recipe</router-link>
         </li>
       </ul>
     </nav>
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style>
-.header{
+header{
   display: flex;
   align-items: center;
   margin: 20px 50px 50px;
@@ -37,18 +37,36 @@ export default {
   color: wheat;
   transition: color 0.3s;
 }
-.header nav ul li{
+.header nav ul li:hover {
+  color: #b09e7d;
+}
+.header nav ul{
+  list-style: none;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.routerLinkAllRecipes{
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  transition: color 0.3s;
+}
+.routerLinkAllRecipes:hover{
   color: #b09e7d;
 }
 
-.allRecipes{
+.routerLinkAddRecipe{
   text-decoration: none;
-  color: wheat;
-  padding-left: 10px;
+  font-size: 30px;
+  color: black;
   transition: color 0.3s;
 }
-
-.allRecipes:hover{
+.routerLinkAddRecipe:hover{
   color: #b09e7d;
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="jj">
+  <div class="addRecipe">
     <h2>Add recipe</h2>
   </div>
 </template>
@@ -19,8 +19,10 @@ export default {
 </script>
 
 <style>
-.jj{
-  background-color: black;
+.addRecipe{
+  text-align: center;
+  font-size: 25px;
+  background-color: ;
 }
 
 </style>
