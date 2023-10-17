@@ -1,6 +1,13 @@
 <template>
+  <div class="nameAllRecepies">
+    <p>fdfdmodmfodm</p>
+    <p>fdfdmodmfodm</p>
+    <p>fdfdmodmfodm</p>
+    <p>fdfdmodmfodm</p>
+    <p>fdfdmodmfodm</p>
+    <p>fdfdmodmfodm</p>
+  </div>
   <div>
-    <h2>All recipes</h2>
   </div>
 </template>
 
@@ -14,5 +21,11 @@ export default {
 </script>
 
 <style>
+body{
+  background-color: #b09e7d;
+}
+.nameAllRecepies p{
+  color: white;
+}
 
 </style>

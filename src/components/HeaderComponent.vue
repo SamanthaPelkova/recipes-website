@@ -1,40 +1,43 @@
 <template>
-  <div class="headers">
-    <a href="AllRecipes.vue" class="allRecipes"> <AllRecipes/></a>
-    <a href="AddRecipe.vue" class="addRecipe"><AddRecipe/></a>
-  </div>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <router-link to="/recipes/all">All Recipes</router-link>
+        </li>
+        <li>
+          <router-link to="/recipes/add">Add Recipe</router-link>
+        </li>
+      </ul>
+    </nav>
+  </header>
 </template>
 
 <script>
-import AllRecipes from "@/components/AllRecipes.vue";
-import AddRecipe from "@/components/AddRecipe.vue";
+import { inject } from 'vue';
 
 export default {
-  components: {AddRecipe, AllRecipes},
-  setup(){
+  setup() {
+    const loadedRecipes = inject('recipes');
 
-  }
-}
+    return { products: loadedRecipes };
+  },
+};
 </script>
 
 <style>
-.headers{
-  background-color: white;
-  border-radius: 10px;
-}
-
-.headers{
+.header{
   display: flex;
   align-items: center;
   margin: 20px 50px 50px;
 }
-.addRecipe {
+.header nav ul li {
   margin-left: 20px;
   text-decoration: none;
   color: wheat;
   transition: color 0.3s;
 }
-.addRecipe:hover{
+.header nav ul li{
   color: #b09e7d;
 }
 

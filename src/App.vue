@@ -1,18 +1,19 @@
 <template>
   <div>
-    <HeaderComponent/>
-    <OneRecipe/>
+    <div class="header">
+      <HeaderComponent/>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue'
-import OneRecipe from './components/OneRecipe.vue'
 
 export default {
   components:{
     HeaderComponent,
-    OneRecipe
+
   },
   setup(){
 
@@ -26,6 +27,11 @@ export default {
 body{
   background-color: rgba(0, 0, 0, 0.89);
   color: white;
+}
+
+.header{
+  background-color: white;
+  border-radius: 10px;
 }
 
 </style>
