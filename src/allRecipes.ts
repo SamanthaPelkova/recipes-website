@@ -4,7 +4,8 @@ export interface Recipe {
     instructions: string;
 }
 
-export const allRecipesInfo: Recipe[] = [
+export const allRecipesInfo = () :Recipe[] => {
+    return[
     {
         name: 'Pasta Carbonara',
         ingredients: ['Spaghetti', 'Eggs', 'Bacon', 'Parmesan Cheese'],
@@ -30,9 +31,12 @@ export const allRecipesInfo: Recipe[] = [
         ingredients: ['Tomatoes', 'Fresh basil', 'Olive oil', 'Salt', 'Pepper'],
         instructions: 'Slice tomatoes; Chop fresh basil; Drizzle with olive oil; Season with salt and pepper.',
     },
-    {
-        name: 'Grilled Salmon',
-        ingredients: ['Salmon fillets', 'Lemon', 'Garlic', 'Olive oil', 'Salt', 'Pepper'],
-        instructions: 'Marinate salmon; Grill until cooked; Squeeze lemon juice before serving.',
-    },
-];
+     {
+         name: 'Grilled Salmon',
+         ingredients: ['Salmon fillets', 'Lemon', 'Garlic', 'Olive oil', 'Salt', 'Pepper'],
+         instructions: 'Marinate salmon; Grill until cooked; Squeeze lemon juice before serving.',
+     },
+    ]
+}
+
+

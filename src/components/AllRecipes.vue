@@ -13,8 +13,8 @@
 </template>
 
 <script lang="ts">
-import { allRecipesInfo } from "";
 import { ref } from "vue";
+import {allRecipesInfo, Recipe} from "../allRecipes";
 
 export default {
   setup(){
